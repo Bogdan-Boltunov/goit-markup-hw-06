@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/mobile.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="nav-logo-web" href="./index.html"
@@ -52,7 +52,71 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mob-menu is-open">
+        <div class="mob-menu-navigation">
+          <button type="button" class="modal-close-btn">
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close">
+              </use>
+            </svg>
+          </button>
+          <ul class="mob-menu-nav-list">
+            <li>
+              <a class="mob-menu-nav-link active" href="./index.html" target="_blank"
+                >Studio</a
+              >
+            </li>
+            <li><a class="mob-menu-nav-link" href="" target="_blank">Portfolio</a></li>
+            <li><a class="mob-menu-nav-link" href="" target="_blank">Contacts</a></li>
+          </ul>
+      </div>
+      <div class="mob-menu-adress">
+        <address class="address">
+          <ul class="mob-menu-address-list">
+            <li>
+              <a class="mob-menu-number-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="mob-menu-mail-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+          <ul class="mob-menu-icon-list">
+            <li class="icon-list-item">
+              <a class="icon-a" href="">
+                <svg class="svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-2">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list-item">
+              <a class="icon-a" href="">
+                <svg class="svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list-item">
+              <a class="icon-a" href="">
+                <svg class="svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list-item">
+              <a class="icon-a" href="">
+                <svg class="svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <section class="hero-section">
         <div class="hero container">
@@ -282,6 +346,7 @@
             <li class="li-list">
               <div class="cover-wrap">
                 <img
+                  class="section-portfolio-ing"
                   src="./images/BankingApp1.jpg"
                   alt="Картинка"
                   width="360"
@@ -292,8 +357,8 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card-wrap">
-                <h3 class="third-heading">Banking App</h3>
+              <div class="portfolio-card-wrap">
+                <h3 class="portfolio-third-heading">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
             </li>
@@ -311,7 +376,7 @@
                 </p>
               </div>
               <div class="card-wrap">
-                <h3 class="third-heading">Cashless Payment</h3>
+                <h3 class="portfolio-third-heading">Cashless Payment</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
@@ -329,7 +394,7 @@
                 </p>
               </div>
               <div class="card-wrap">
-                <h3 class="third-heading">Meditation App</h3>
+                <h3 class="portfolio-third-heading">Meditation App</h3>
                 <p class="portfolio-text">App</p>
               </div>
             </li>
@@ -347,7 +412,7 @@
                 </p>
               </div>
               <div class="card-wrap">
-                <h3 class="third-heading">Taxi Service</h3>
+                <h3 class="portfolio-third-heading">Taxi Service</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
@@ -365,7 +430,7 @@
                 </p>
               </div>
               <div class="card-wrap">
-                <h3 class="third-heading">Screen Illustrations</h3>
+                <h3 class="portfolio-third-heading">Screen Illustrations</h3>
                 <p class="portfolio-text">Design</p>
               </div>
             </li>
@@ -383,7 +448,7 @@
                 </p>
               </div>
               <div class="card-wrap">
-                <h3 class="third-heading">Online Courses</h3>
+                <h3 class="portfolio-third-heading">Online Courses</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
             </li>
@@ -391,7 +456,7 @@
         </div>
       </section>
     </main>
-    <footer class="basement">
+    <footer class="footer">
       <div class="container footer-global">
         <div class="footer-container">
           <a href="./index.html" class="basement-logo-web"
@@ -458,7 +523,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -523,8 +588,9 @@
                     <svg class="check-svg" width="10" height="8">
                         <use href="./images/icons.svg#icon-checkmark"></use>
                     </svg>
-                </span>I accept the terms and conditions of the
+                </span><span> accept the terms and conditions of the
                 <a href="" class="privacy-href">Privacy Policy</a>
+              </span>
             </label>
         </div>
         <button class="form-button-submit" type="submit">Send</button>
