@@ -59,6 +59,45 @@ ol {
     padding-right: 16px;
   }
 
+  /*===> header <===*/
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-nav-list {
+    display: none;
+  }
+
+  .header-adress {
+    display: none;
+  }
+
+  .nav-logo-web {
+    display: block;
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+    padding: 16px 0;
+}
+
+.nav-logo-studio {
+    color: #2E2F42;
+}
+
+.menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
 /* ===>Моб-меню<=== */
 
   .mob-menu {
@@ -82,16 +121,16 @@ ol {
     justify-content: space-between;
   }
 
-/* .mob-menu-navigation {
-
-} */
+.mob-menu-adress {
+    margin-top: auto;
+}
 
 .mob-menu-nav-list{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    margin: 72px 153px 168px 0;
+    /* margin: 72px 153px 168px 0; */
 }
 
 .mob-menu-nav-link {
@@ -139,9 +178,9 @@ ol {
 }
 
 .mob-menu-icon-list {
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
     gap: 40px;
+    margin-top: auto;
 }
 
 /* ===>Перша секція<=== */
@@ -805,4 +844,37 @@ color: #ffffff;
     background-color: #404bbf;
     border: none;
     fill: #ffffff
+}
+
+/*===> Tablet<=== */
+
+@media screen and (min-width: 768px) {
+
+.container {
+    max-width: 768px;
+}
+    
+.header-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-adress {
+    display: flex;
+}
+
+.menu-open-btn {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 24px 0;
+}
+
 }
