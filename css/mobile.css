@@ -877,4 +877,13 @@ color: #ffffff;
     padding: 24px 0;
 }
 
+.address-link {
+    color: var(--text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+}
+
 }
